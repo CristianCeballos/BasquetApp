@@ -1,0 +1,11 @@
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\bin\Debug\netcoreapp2.0\PasionApp.deps.json
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\bin\Debug\netcoreapp2.0\PasionApp.runtimeconfig.json
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\bin\Debug\netcoreapp2.0\PasionApp.runtimeconfig.dev.json
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\bin\Debug\netcoreapp2.0\PasionApp.dll
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\bin\Debug\netcoreapp2.0\PasionApp.pdb
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\obj\Debug\netcoreapp2.0\PasionApp.csprojAssemblyReference.cache
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\obj\Debug\netcoreapp2.0\PasionApp.csproj.CoreCompileInputs.cache
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\obj\Debug\netcoreapp2.0\PasionApp.AssemblyInfoInputs.cache
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\obj\Debug\netcoreapp2.0\PasionApp.AssemblyInfo.cs
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\obj\Debug\netcoreapp2.0\PasionApp.dll
+C:\Users\marx_\Desktop\ProyectoGacetilla\PasionApp\PasionApp\obj\Debug\netcoreapp2.0\PasionApp.pdb

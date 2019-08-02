@@ -1,0 +1,81 @@
+﻿@using PasionApp.Models;
+@using PasionApp.ViewModel;
+
+@{
+    Layout = null;
+}
+
+@model AppViewModel
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Nuevo Partido</title>
+</head>
+
+<body>
+
+    <h1>Nuevo Cliente</h1>
+
+    <div class="form-group">
+        @Html.ValidationSummary()
+
+        <table class="table">
+
+
+            @using (Html.BeginForm())
+            {
+
+                <tr>
+                    <td>Equipo Local</td>
+                    <td>@Html.DropDownListFor(c => c.partido.id_equipoLocal, new SelectList(Model.listaEquipo, "id_equipo", "nombre"))</td>
+                </tr>
+
+                <tr>
+                    <td>Puntos Local</td>
+                    <td>@Html.TextBoxFor(c => c.partido.puntosLocal)</td>
+                </tr>
+
+                <tr>
+                    <td>Equipo Visitante</td>
+                    <td>@Html.DropDownListFor(c => c.partido.id_equipoVisitante, new SelectList(Model.listaEquipo, "id_equipo", "nombre"))</td>
+                </tr>
+
+
+                <tr>
+                    <td>Puntos Visitante</td>
+                    <td>@Html.TextBoxFor(c => c.partido.puntosVisitate)</td>
+                </tr>
+
+                <tr>
+                    <td>Fecha</td>
+                    <td>@Html.TextBoxFor(c => c.partido.fecha)dd/mm/aaaa</td>
+                </tr>
+
+
+                <tr>
+                    <td>Jugador del Partido</td>
+                    <td>@Html.DropDownListFor(c => c.partido.id_jugadorDelPartido, new SelectList(Model.listaJugadores, "id_jugador", "nombre"))</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Agregar" /></td>
+                </tr>
+
+            }
+
+        </table>
+
+    </div>
+
+
+    <div>
+        @Html.ActionLink("Volver", "/MostrarClientes")
+    </div>
+
+</body>
+</html>

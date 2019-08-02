@@ -1,0 +1,75 @@
+
+create database PasionDB
+
+
+use PasionDB
+
+
+create table Equipos
+(
+	id_equipo int not null,
+	nombre nvarchar(30) not null,
+	ciudad nvarchar(30),
+	entrenador nvarchar(30),
+	imagenEquipo nvarchar(30),
+	escudo nvarchar(30),
+	constraint pk_equipo primary key(id_equipo)
+)
+
+drop table Equipos
+
+create table Jugadores
+(
+	id_jugador int not null,
+	nombre nvarchar(30) not null,
+	edad int,
+	telefono nvarchar(30),
+	mail nvarchar(30),
+	puntos int,
+	id_equipo int,
+	constraint pk_jugador primary key(id_jugador),
+	constraint fk_equipo foreign key (id_equipo) references Equipos(id_equipo)
+)
+
+
+create table Partidos
+(
+	id_partido int not null,
+	id_equipoLocal int not null,
+	puntosLocal int not null,
+	id_equipoVisitante int not null,
+	puntosVisitante int not null,
+	fecha date,
+	id_jugadorDelPartido int,
+	constraint pk_partido primary key(id_partido),
+	constraint fk_equipoLocal foreign key (id_equipoLocal) references Equipos(id_equipo),
+	constraint fk_equipoVisitante foreign key (id_equipoVisitante) references Equipos(id_equipo),
+	constraint fk_jugadorDelPartidol foreign key (id_jugadorDelPartido) references Jugadores(id_jugador)
+)
+
+
+create table Noticias
+(
+	id_noticia int not null,
+	fecha date,
+	titulo nvarchar(30),
+	cuerpoNoticia nvarchar,
+	imagen nvarchar(30),
+	autor nvarchar(30),
+	constraint pk_noticia primary key(id_noticia)
+)
+
+
+select j.nombre, e.nombre
+from jugadores j, equipos e
+where j.id_equipo=e.id_equipo and e.nombre='Chocolates'
+
+select * from jugadores
+where nombre like 'nico%'
+
+select * from equipos
+
+
+  select j.nombre
+  from jugadores j, equipos eq
+  where j.id_equipo=eq.id_equipo and eq.id_equipo=8
